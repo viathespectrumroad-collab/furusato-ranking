@@ -1,0 +1,18 @@
+# モノ価格ログ
+
+> 楽天市場の商品価格を毎日記録し、いまの価格が観測期間のなかで安いのか高いのかを判定するサイト。ふるさと納税の穴場・お値打ち返礼品と、楽天トラベルの穴場の宿も掲載。判定はすべて自動集計で、広告(アフィリエイト)を含みます。
+
+## 主なページ
+- [買い時ナビ(価格履歴で判定)](https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/): 家電・日用品など約2,500商品の底値圏・高値圏の判定
+- [今日の値下がり・底値更新](https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/today/): 毎日更新。前回より値下がりした商品と、新たに底値圏に入った商品
+- [いつ買うのが安い?](https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/when/): 日ごと・曜日ごとの底値圏の商品の割合
+- [ふるさと納税の穴場](https://viathespectrumroad-collab.github.io/furusato-ranking/gems/): 評価が高いのにレビューが少ない返礼品
+- [温泉宿の穴場ナビ](https://viathespectrumroad-collab.github.io/furusato-ranking/travel/): 評価が高いのに口コミが少ない宿
+- [このサイトについて・判定方法・広告表記](https://viathespectrumroad-collab.github.io/furusato-ranking/about/)
+
+## 判定の考え方
+- 価格は楽天市場の表示価格(クーポン・ポイントは含まない)を毎日記録した実測値。通常価格との比較ではない。
+- 「底値圏」は観測した最安値の2%以内、「高値圏」は観測期間のなかで高い水準。観測期間は限られ、将来の価格を予測するものではない。
+
+## フィード
+- [RSS(値下がり・底値更新)](https://viathespectrumroad-collab.github.io/furusato-ranking/feed.xml)

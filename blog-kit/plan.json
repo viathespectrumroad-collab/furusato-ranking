@@ -1,0 +1,1281 @@
+{
+ "schema": 3,
+ "generated_for": "2026-11-21",
+ "site": "https://viathespectrumroad-collab.github.io/furusato-ranking/",
+ "site_name": "モノ価格ログ",
+ "tagline": "安いものを探す前に、安いかどうかを確かめる。",
+ "target_share_pct": {
+  "guide": 40,
+  "timing": 30,
+  "rank": 20,
+  "sale": 10
+ },
+ "freshness_days": {
+  "timing": 1
+ },
+ "type_names": {
+  "guide": "商品選び・課題解決",
+  "timing": "買い時・価格分析",
+  "rank": "比較・ランキング",
+  "sale": "セール攻略・買い物術"
+ },
+ "selection_rule": "1) ブログの記事一覧(下書き含む)から、briefs の id が utm_campaign=<id> として出てくる企画を『書き済み』とする(singleは item/<slug>/ も見る)。2) 書き済みの記事数を種類別に数え、目標配分(target_share_pct)との不足が最も大きい種類を選ぶ(同点は guide, timing, rank, sale の順)。3) その種類の書き済みでない企画から priority が小さい順に1つ選ぶ。なければ次に不足の大きい種類へ。4) 買い時型(timing)は鮮度が命: brief の valid_until(生成の翌日)を、今日の日付(日本時間)が過ぎていたら、その企画は選ばない(古い値段で書かない)。全部過ぎていたら、登録せずに報告して終わる。登録した下書きは、記録日の翌日までに公開しないと誤りになる、と最後の報告に書く。",
+ "briefs": [
+  {
+   "id": "guide-cat-food-under-10000",
+   "type": "guide",
+   "priority": -145.0,
+   "title_hint": "「コーヒー 豆のまま 1kg」が3,080円→1,460円。1万円以下の食品・飲料は、買う日で1,620円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/food/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-food-under-10000&utm_content=end",
+   "landing_label": "1万円以下の食品・飲料の一覧を見る",
+   "landing_items": 145,
+   "brief": "blog-kit/brief/guide-cat-food-under-10000.json"
+  },
+  {
+   "id": "guide-cat-daily-under-10000",
+   "type": "guide",
+   "priority": -86.0,
+   "title_hint": "「ペット ごはん 自動給餌器」が7,500円→3,937円。1万円以下の日用品・ベビーは、買う日で3,563円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/daily/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-daily-under-10000&utm_content=end",
+   "landing_label": "1万円以下の日用品・ベビーの一覧を見る",
+   "landing_items": 86,
+   "brief": "blog-kit/brief/guide-cat-daily-under-10000.json"
+  },
+  {
+   "id": "guide-cat-kitchen-under-10000",
+   "type": "guide",
+   "priority": -66.0,
+   "title_hint": "「ノンフライヤー 4.5L/6.3…」、高い日は13,980円、安い日は5,980円。差は8,000円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/kitchen/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-kitchen-under-10000&utm_content=end",
+   "landing_label": "1万円以下のキッチン・生活家電の一覧を見る",
+   "landing_items": 66,
+   "brief": "blog-kit/brief/guide-cat-kitchen-under-10000.json"
+  },
+  {
+   "id": "guide-cat-furniture-under-10000",
+   "type": "guide",
+   "priority": -56.0,
+   "title_hint": "「枕 肩こり 首こり まくら」が9,880円→4,139円。1万円以下の家具・インテリアは、買う日で5,741円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/furniture/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-furniture-under-10000&utm_content=end",
+   "landing_label": "1万円以下の家具・インテリアの一覧を見る",
+   "landing_items": 56,
+   "brief": "blog-kit/brief/guide-cat-furniture-under-10000.json"
+  },
+  {
+   "id": "guide-cat-pc-under-10000",
+   "type": "guide",
+   "priority": -54.0,
+   "title_hint": "「fanxiang SSD」、高い日は13,980円、安い日は7,780円。差は6,200円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-pc-under-10000&utm_content=end",
+   "landing_label": "1万円以下のパソコン・周辺機器の一覧を見る",
+   "landing_items": 54,
+   "brief": "blog-kit/brief/guide-cat-pc-under-10000.json"
+  },
+  {
+   "id": "guide-type-bedding-under-10000",
+   "type": "guide",
+   "priority": -47.0,
+   "title_hint": "「枕 肩こり 首こり まくら」、高い日は9,880円、安い日は4,139円。差は5,741円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/bedding/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-bedding-under-10000&utm_content=end",
+   "landing_label": "1万円以下の寝具(布団・枕・マットレス)の一覧を見る",
+   "landing_items": 47,
+   "brief": "blog-kit/brief/guide-type-bedding-under-10000.json"
+  },
+  {
+   "id": "guide-cat-sports-under-10000",
+   "type": "guide",
+   "priority": -34.0,
+   "title_hint": "1万円以下のスポーツ・アウトドアで、4,048円損しない買い方。「ナイキ フレックス コントロール」は10,120円の日も6,072円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/sports/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-sports-under-10000&utm_content=end",
+   "landing_label": "1万円以下のスポーツ・アウトドアの一覧を見る",
+   "landing_items": 34,
+   "brief": "blog-kit/brief/guide-cat-sports-under-10000.json"
+  },
+  {
+   "id": "guide-type-shoes-under-10000",
+   "type": "guide",
+   "priority": -28.0,
+   "title_hint": "1万円以下のシューズ・スニーカーで、4,048円損しない買い方。「ナイキ フレックス コントロール」は10,120円の日も6,072円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/shoes/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-shoes-under-10000&utm_content=end",
+   "landing_label": "1万円以下のシューズ・スニーカーの一覧を見る",
+   "landing_items": 28,
+   "brief": "blog-kit/brief/guide-type-shoes-under-10000.json"
+  },
+  {
+   "id": "guide-cat-season-under-10000",
+   "type": "guide",
+   "priority": -23.0,
+   "title_hint": "「さらひや続く。 持続冷感」、高い日は2,699円、安い日は2,222円。差は477円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/season/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-season-under-10000&utm_content=end",
+   "landing_label": "1万円以下の空調・季節家電の一覧を見る",
+   "landing_items": 23,
+   "brief": "blog-kit/brief/guide-cat-season-under-10000.json"
+  },
+  {
+   "id": "guide-cat-beauty-under-10000",
+   "type": "guide",
+   "priority": -17.0,
+   "title_hint": "「筋膜リリース ガン」が3,980円→2,180円。1万円以下の美容・健康は、買う日で1,800円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/beauty/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-beauty-under-10000&utm_content=end",
+   "landing_label": "1万円以下の美容・健康の一覧を見る",
+   "landing_items": 17,
+   "brief": "blog-kit/brief/guide-cat-beauty-under-10000.json"
+  },
+  {
+   "id": "guide-type-washer-under-10000",
+   "type": "guide",
+   "priority": -17.0,
+   "title_hint": "1万円以下の洗濯機・乾燥機で、2,820円損しない買い方。「布団乾燥機 アイリスオーヤマ」は11,800円の日も8,980円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/washer/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-washer-under-10000&utm_content=end",
+   "landing_label": "1万円以下の洗濯機・乾燥機の一覧を見る",
+   "landing_items": 17,
+   "brief": "blog-kit/brief/guide-type-washer-under-10000.json"
+  },
+  {
+   "id": "guide-cat-tv-under-10000",
+   "type": "guide",
+   "priority": -16.0,
+   "title_hint": "1万円以下のテレビ・モニターで、5,580円損しない買い方。「Pixio PS1D Wave」は14,980円の日も9,400円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/tv/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-tv-under-10000&utm_content=end",
+   "landing_label": "1万円以下のテレビ・モニターの一覧を見る",
+   "landing_items": 16,
+   "brief": "blog-kit/brief/guide-cat-tv-under-10000.json"
+  },
+  {
+   "id": "guide-type-kettle-under-10000",
+   "type": "guide",
+   "priority": -15.0,
+   "title_hint": "1万円以下の電気ケトルで、1,764円損しない買い方。「象印マホービン CK-VB15-…」は7,700円の日も5,936円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/kettle/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-kettle-under-10000&utm_content=end",
+   "landing_label": "1万円以下の電気ケトルの一覧を見る",
+   "landing_items": 15,
+   "brief": "blog-kit/brief/guide-type-kettle-under-10000.json"
+  },
+  {
+   "id": "guide-type-detergent-under-10000",
+   "type": "guide",
+   "priority": -14.0,
+   "title_hint": "「フィニッシュ 凝縮パワーキューブ」、高い日は3,380円、安い日は1,980円。差は1,400円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/detergent/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-detergent-under-10000&utm_content=end",
+   "landing_label": "1万円以下の洗剤の一覧を見る",
+   "landing_items": 14,
+   "brief": "blog-kit/brief/guide-type-detergent-under-10000.json"
+  },
+  {
+   "id": "guide-type-health-under-10000",
+   "type": "guide",
+   "priority": -13.0,
+   "title_hint": "1万円以下の血圧計・体重計で、2,872円損しない買い方。「オムロン OMRON」は11,880円の日も9,008円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/health/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-health-under-10000&utm_content=end",
+   "landing_label": "1万円以下の血圧計・体重計の一覧を見る",
+   "landing_items": 13,
+   "brief": "blog-kit/brief/guide-type-health-under-10000.json"
+  },
+  {
+   "id": "guide-cat-fashion-under-10000",
+   "type": "guide",
+   "priority": -11.0,
+   "title_hint": "「ニューバランス スニーカー」が9,990円→7,470円。1万円以下の時計・ファッションは、買う日で2,520円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/fashion/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-fashion-under-10000&utm_content=end",
+   "landing_label": "1万円以下の時計・ファッションの一覧を見る",
+   "landing_items": 11,
+   "brief": "blog-kit/brief/guide-cat-fashion-under-10000.json"
+  },
+  {
+   "id": "guide-type-beer-under-10000",
+   "type": "guide",
+   "priority": -11.0,
+   "title_hint": "「アサヒ スーパードライ 缶」、高い日は9,498円、安い日は8,548円。差は950円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/beer/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-beer-under-10000&utm_content=end",
+   "landing_label": "1万円以下のビール・ウイスキーの一覧を見る",
+   "landing_items": 11,
+   "brief": "blog-kit/brief/guide-type-beer-under-10000.json"
+  },
+  {
+   "id": "guide-type-cooker-under-10000",
+   "type": "guide",
+   "priority": -10.0,
+   "title_hint": "「ノンフライヤー 4.5L/6.3…」が13,980円→5,980円。1万円以下の調理家電は、買う日で8,000円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/cooker/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-cooker-under-10000&utm_content=end",
+   "landing_label": "1万円以下の調理家電の一覧を見る",
+   "landing_items": 10,
+   "brief": "blog-kit/brief/guide-type-cooker-under-10000.json"
+  },
+  {
+   "id": "guide-type-router-under-10000",
+   "type": "guide",
+   "priority": -10.0,
+   "title_hint": "1万円以下のWi-Fiルーターで、2,000円損しない買い方。「自動給餌器 猫 2匹自動餌やり機」は9,900円の日も7,900円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/router/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-router-under-10000&utm_content=end",
+   "landing_label": "1万円以下のWi-Fiルーターの一覧を見る",
+   "landing_items": 10,
+   "brief": "blog-kit/brief/guide-type-router-under-10000.json"
+  },
+  {
+   "id": "guide-type-monitor-under-10000",
+   "type": "guide",
+   "priority": -10.0,
+   "title_hint": "「Pixio PS1D Wave」、高い日は14,980円、安い日は9,400円。差は5,580円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/monitor/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-monitor-under-10000&utm_content=end",
+   "landing_label": "1万円以下のモニター・ディスプレイの一覧を見る",
+   "landing_items": 10,
+   "brief": "blog-kit/brief/guide-type-monitor-under-10000.json"
+  },
+  {
+   "id": "guide-cat-food-under-5000",
+   "type": "guide",
+   "priority": 9931.0,
+   "title_hint": "「コーヒー 豆のまま 1kg」、高い日は3,080円、安い日は1,460円。差は1,620円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/food/under-5000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-food-under-5000&utm_content=end",
+   "landing_label": "5,000円以下の食品・飲料の一覧を見る",
+   "landing_items": 69,
+   "brief": "blog-kit/brief/guide-cat-food-under-5000.json"
+  },
+  {
+   "id": "guide-cat-daily-under-5000",
+   "type": "guide",
+   "priority": 9948.0,
+   "title_hint": "「ペット ごはん 自動給餌器」、高い日は7,500円、安い日は3,937円。差は3,563円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/daily/under-5000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-daily-under-5000&utm_content=end",
+   "landing_label": "5,000円以下の日用品・ベビーの一覧を見る",
+   "landing_items": 52,
+   "brief": "blog-kit/brief/guide-cat-daily-under-5000.json"
+  },
+  {
+   "id": "guide-cat-furniture-under-5000",
+   "type": "guide",
+   "priority": 9963.0,
+   "title_hint": "「電気毛布 敷き 160×80cm」、高い日は7,560円、安い日は4,280円。差は3,280円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/furniture/under-5000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-cat-furniture-under-5000&utm_content=end",
+   "landing_label": "5,000円以下の家具・インテリアの一覧を見る",
+   "landing_items": 37,
+   "brief": "blog-kit/brief/guide-cat-furniture-under-5000.json"
+  },
+  {
+   "id": "guide-type-bedding-under-5000",
+   "type": "guide",
+   "priority": 9973.0,
+   "title_hint": "5,000円以下の寝具(布団・枕・マットレス)で、3,280円損しない買い方。「電気毛布 敷き 160×80cm」は7,560円の日も4,280円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/bedding/under-5000/?utm_source=hatena&utm_medium=blog&utm_campaign=guide-type-bedding-under-5000&utm_content=end",
+   "landing_label": "5,000円以下の寝具(布団・枕・マットレス)の一覧を見る",
+   "landing_items": 27,
+   "brief": "blog-kit/brief/guide-type-bedding-under-5000.json"
+  },
+  {
+   "id": "rank-all",
+   "type": "rank",
+   "priority": 1027344.0,
+   "title_hint": "楽天市場の値下がり、「下げ幅」1位は買い時ではなかった。直近14日、いつもより安い順TOP5(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/today/?utm_source=hatena&utm_medium=blog&utm_campaign=rank-all&utm_content=end",
+   "landing_label": "楽天市場の一覧を見る",
+   "landing_items": 2656,
+   "brief": "blog-kit/brief/rank-all.json"
+  },
+  {
+   "id": "sale-audit-202611",
+   "type": "sale",
+   "priority": 0,
+   "title_hint": "楽天の「値下がり」305件のうち、88件は元の値段に戻っただけに見える(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/today/?utm_source=hatena&utm_medium=blog&utm_campaign=sale-audit-202611&utm_content=end",
+   "landing_label": "今日の値下がり・底値更新を見る",
+   "landing_items": 305,
+   "brief": "blog-kit/brief/sale-audit-202611.json"
+  },
+  {
+   "id": "sale-half-202611",
+   "type": "sale",
+   "priority": 1,
+   "title_hint": "楽天の「半額」表示、半分だけ信じていい?値下がり20商品の過去価格で確かめた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/today/?utm_source=hatena&utm_medium=blog&utm_campaign=sale-half-202611&utm_content=end",
+   "landing_label": "今日の値下がり・底値更新を見る",
+   "landing_items": 20,
+   "brief": "blog-kit/brief/sale-half-202611.json"
+  },
+  {
+   "id": "sale-weekly-2026-11-21",
+   "type": "sale",
+   "priority": 9,
+   "title_hint": "【2026年11月】今週の値下がり5選｜価格推移で見る買い時まとめ",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/today/?utm_source=hatena&utm_medium=blog&utm_campaign=sale-weekly-2026-11-21&utm_content=end",
+   "landing_label": "今日の値下がり・底値更新を見る",
+   "landing_items": 2656,
+   "brief": "blog-kit/brief/sale-weekly-2026-11-21.json"
+  },
+  {
+   "id": "timing-wait-storage-2026Q4",
+   "type": "timing",
+   "priority": 1.3559999999999999,
+   "title_hint": "SSD・HDD・NAS、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/storage/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-storage-2026Q4&utm_content=end",
+   "landing_label": "SSD・HDD・NASの価格推移・買い時の一覧を見る",
+   "landing_items": 144,
+   "brief": "blog-kit/brief/timing-wait-storage-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-router-2026Q4",
+   "type": "timing",
+   "priority": 1.3940000000000001,
+   "title_hint": "Wi-Fiルーター、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/router/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-router-2026Q4&utm_content=end",
+   "landing_label": "Wi-Fiルーターの価格推移・買い時の一覧を見る",
+   "landing_items": 106,
+   "brief": "blog-kit/brief/timing-wait-router-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-fridge-2026Q4",
+   "type": "timing",
+   "priority": 1.4220000000000002,
+   "title_hint": "冷蔵庫・冷凍庫、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/fridge/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-fridge-2026Q4&utm_content=end",
+   "landing_label": "冷蔵庫・冷凍庫の価格推移・買い時の一覧を見る",
+   "landing_items": 78,
+   "brief": "blog-kit/brief/timing-wait-fridge-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-monitor-2026Q4",
+   "type": "timing",
+   "priority": 1.425,
+   "title_hint": "モニター・ディスプレイ、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/monitor/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-monitor-2026Q4&utm_content=end",
+   "landing_label": "モニター・ディスプレイの価格推移・買い時の一覧を見る",
+   "landing_items": 75,
+   "brief": "blog-kit/brief/timing-wait-monitor-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-air-purifier-2026Q4",
+   "type": "timing",
+   "priority": 1.438,
+   "title_hint": "空気清浄機、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/air-purifier/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-air-purifier-2026Q4&utm_content=end",
+   "landing_label": "空気清浄機の価格推移・買い時の一覧を見る",
+   "landing_items": 62,
+   "brief": "blog-kit/brief/timing-wait-air-purifier-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-vacuum-2026Q4",
+   "type": "timing",
+   "priority": 1.439,
+   "title_hint": "掃除機、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-vacuum-2026Q4&utm_content=end",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 61,
+   "brief": "blog-kit/brief/timing-wait-vacuum-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-cookware-2026Q4",
+   "type": "timing",
+   "priority": 1.442,
+   "title_hint": "フライパン・鍋、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/cookware/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-cookware-2026Q4&utm_content=end",
+   "landing_label": "フライパン・鍋の価格推移・買い時の一覧を見る",
+   "landing_items": 58,
+   "brief": "blog-kit/brief/timing-wait-cookware-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-smartphone-2026Q4",
+   "type": "timing",
+   "priority": 1.4529999999999998,
+   "title_hint": "iPhone・スマートフォン、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/smartphone/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-smartphone-2026Q4&utm_content=end",
+   "landing_label": "iPhone・スマートフォンの価格推移・買い時の一覧を見る",
+   "landing_items": 47,
+   "brief": "blog-kit/brief/timing-wait-smartphone-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-watch-2026Q4",
+   "type": "timing",
+   "priority": 1.4569999999999999,
+   "title_hint": "腕時計・スマートウォッチ、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/watch/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-watch-2026Q4&utm_content=end",
+   "landing_label": "腕時計・スマートウォッチの価格推移・買い時の一覧を見る",
+   "landing_items": 43,
+   "brief": "blog-kit/brief/timing-wait-watch-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-earphone-2026Q4",
+   "type": "timing",
+   "priority": 1.459,
+   "title_hint": "イヤホン・AirPods、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/earphone/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-earphone-2026Q4&utm_content=end",
+   "landing_label": "イヤホン・AirPodsの価格推移・買い時の一覧を見る",
+   "landing_items": 41,
+   "brief": "blog-kit/brief/timing-wait-earphone-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-chair-2026Q4",
+   "type": "timing",
+   "priority": 1.466,
+   "title_hint": "チェア・椅子、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/chair/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-chair-2026Q4&utm_content=end",
+   "landing_label": "チェア・椅子の価格推移・買い時の一覧を見る",
+   "landing_items": 34,
+   "brief": "blog-kit/brief/timing-wait-chair-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-laptop-2026Q4",
+   "type": "timing",
+   "priority": 1.467,
+   "title_hint": "ノートパソコン、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/laptop/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-laptop-2026Q4&utm_content=end",
+   "landing_label": "ノートパソコンの価格推移・買い時の一覧を見る",
+   "landing_items": 33,
+   "brief": "blog-kit/brief/timing-wait-laptop-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-game-console-2026Q4",
+   "type": "timing",
+   "priority": 1.47,
+   "title_hint": "ゲーム機、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/game-console/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-game-console-2026Q4&utm_content=end",
+   "landing_label": "ゲーム機の価格推移・買い時の一覧を見る",
+   "landing_items": 30,
+   "brief": "blog-kit/brief/timing-wait-game-console-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-aircon-2026Q4",
+   "type": "timing",
+   "priority": 1.4729999999999999,
+   "title_hint": "エアコン、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/aircon/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-aircon-2026Q4&utm_content=end",
+   "landing_label": "エアコンの価格推移・買い時の一覧を見る",
+   "landing_items": 27,
+   "brief": "blog-kit/brief/timing-wait-aircon-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-projector-2026Q4",
+   "type": "timing",
+   "priority": 1.4729999999999999,
+   "title_hint": "プロジェクター、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/projector/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-projector-2026Q4&utm_content=end",
+   "landing_label": "プロジェクターの価格推移・買い時の一覧を見る",
+   "landing_items": 27,
+   "brief": "blog-kit/brief/timing-wait-projector-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-hair-2026Q4",
+   "type": "timing",
+   "priority": 1.48,
+   "title_hint": "ドライヤー・ヘアアイロン、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/hair/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-hair-2026Q4&utm_content=end",
+   "landing_label": "ドライヤー・ヘアアイロンの価格推移・買い時の一覧を見る",
+   "landing_items": 20,
+   "brief": "blog-kit/brief/timing-wait-hair-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-power-station-2026Q4",
+   "type": "timing",
+   "priority": 1.4849999999999999,
+   "title_hint": "ポータブル電源、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/power-station/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-power-station-2026Q4&utm_content=end",
+   "landing_label": "ポータブル電源の価格推移・買い時の一覧を見る",
+   "landing_items": 15,
+   "brief": "blog-kit/brief/timing-wait-power-station-2026Q4.json"
+  },
+  {
+   "id": "timing-wait-impact-driver-2026Q4",
+   "type": "timing",
+   "priority": 1.486,
+   "title_hint": "インパクトドライバー、いま買うと損するかも。高値圏の商品と、待つ目安(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/impact-driver/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-wait-impact-driver-2026Q4&utm_content=end",
+   "landing_label": "インパクトドライバーの価格推移・買い時の一覧を見る",
+   "landing_items": 14,
+   "brief": "blog-kit/brief/timing-wait-impact-driver-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-storage-2026Q4",
+   "type": "timing",
+   "priority": 1.8559999999999999,
+   "title_hint": "「BUFFALO バッファロー」が35,334円→14,480円。SSD・HDD・NASは、買う日で20,854円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/storage/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-storage-2026Q4&utm_content=end",
+   "landing_label": "SSD・HDD・NASの価格推移・買い時の一覧を見る",
+   "landing_items": 144,
+   "brief": "blog-kit/brief/timing-cat-storage-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-router-2026Q4",
+   "type": "timing",
+   "priority": 1.8940000000000001,
+   "title_hint": "Wi-Fiルーターで、11,264円損しない買い方。「エレコム WiFi 7 ルーター」は22,748円の日も11,484円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/router/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-router-2026Q4&utm_content=end",
+   "landing_label": "Wi-Fiルーターの価格推移・買い時の一覧を見る",
+   "landing_items": 106,
+   "brief": "blog-kit/brief/timing-cat-router-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-camera-2026Q4",
+   "type": "timing",
+   "priority": 1.904,
+   "title_hint": "「Insta360 X4 Air」が56,900円→38,400円。カメラ・レンズは、買う日で18,500円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/camera/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-camera-2026Q4&utm_content=end",
+   "landing_label": "カメラ・レンズの価格推移・買い時の一覧を見る",
+   "landing_items": 96,
+   "brief": "blog-kit/brief/timing-cat-camera-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-cooker-2026Q4",
+   "type": "timing",
+   "priority": 1.909,
+   "title_hint": "調理家電の底値は長続きしない。最安値をつけた32商品のうち、16商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/cooker/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-cooker-2026Q4&utm_content=end",
+   "landing_label": "調理家電の価格推移・買い時の一覧を見る",
+   "landing_items": 91,
+   "brief": "blog-kit/brief/timing-cat-cooker-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-bedding-2026Q4",
+   "type": "timing",
+   "priority": 1.921,
+   "title_hint": "「枕 肩こり 首こり まくら」、高い日は9,880円、安い日は4,139円。差は5,741円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/bedding/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-bedding-2026Q4&utm_content=end",
+   "landing_label": "寝具(布団・枕・マットレス)の価格推移・買い時の一覧を見る",
+   "landing_items": 79,
+   "brief": "blog-kit/brief/timing-cat-bedding-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-fridge-2026Q4",
+   "type": "timing",
+   "priority": 1.9220000000000002,
+   "title_hint": "「COMFEE' 冷凍庫 上開き」、高い日は19,800円、安い日は11,800円。差は8,000円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/fridge/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-fridge-2026Q4&utm_content=end",
+   "landing_label": "冷蔵庫・冷凍庫の価格推移・買い時の一覧を見る",
+   "landing_items": 78,
+   "brief": "blog-kit/brief/timing-cat-fridge-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-monitor-2026Q4",
+   "type": "timing",
+   "priority": 1.925,
+   "title_hint": "「Pixio ゲーミングモニター」、高い日は39,980円、安い日は22,800円。差は17,180円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/monitor/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-monitor-2026Q4&utm_content=end",
+   "landing_label": "モニター・ディスプレイの価格推移・買い時の一覧を見る",
+   "landing_items": 75,
+   "brief": "blog-kit/brief/timing-cat-monitor-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-washer-2026Q4",
+   "type": "timing",
+   "priority": 1.9260000000000002,
+   "title_hint": "洗濯機・乾燥機の底値は長続きしない。最安値をつけた20商品のうち、9商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/washer/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-washer-2026Q4&utm_content=end",
+   "landing_label": "洗濯機・乾燥機の価格推移・買い時の一覧を見る",
+   "landing_items": 74,
+   "brief": "blog-kit/brief/timing-cat-washer-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-tv-2026Q4",
+   "type": "timing",
+   "priority": 1.929,
+   "title_hint": "「フィリップス サウンドバー」が33,600円→15,800円。テレビは、買う日で17,800円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/tv/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-tv-2026Q4&utm_content=end",
+   "landing_label": "テレビの価格推移・買い時の一覧を見る",
+   "landing_items": 71,
+   "brief": "blog-kit/brief/timing-cat-tv-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-air-purifier-2026Q4",
+   "type": "timing",
+   "priority": 1.938,
+   "title_hint": "空気清浄機で、14,890円損しない買い方。「ダイキン｜DAIKIN」は44,220円の日も29,330円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/air-purifier/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-air-purifier-2026Q4&utm_content=end",
+   "landing_label": "空気清浄機の価格推移・買い時の一覧を見る",
+   "landing_items": 62,
+   "brief": "blog-kit/brief/timing-cat-air-purifier-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-vacuum-2026Q4",
+   "type": "timing",
+   "priority": 1.939,
+   "title_hint": "「公式 Roomba Plus」が169,800円→69,800円。掃除機は、買う日で100,000円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-vacuum-2026Q4&utm_content=end",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 61,
+   "brief": "blog-kit/brief/timing-cat-vacuum-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-cookware-2026Q4",
+   "type": "timing",
+   "priority": 1.942,
+   "title_hint": "フライパン・鍋の底値は長続きしない。最安値をつけた29商品のうち、13商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/cookware/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-cookware-2026Q4&utm_content=end",
+   "landing_label": "フライパン・鍋の価格推移・買い時の一覧を見る",
+   "landing_items": 58,
+   "brief": "blog-kit/brief/timing-cat-cookware-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-tablet-2026Q4",
+   "type": "timing",
+   "priority": 1.944,
+   "title_hint": "iPad・タブレットの底値は長続きしない。最安値をつけた25商品のうち、13商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/tablet/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-tablet-2026Q4&utm_content=end",
+   "landing_label": "iPad・タブレットの価格推移・買い時の一覧を見る",
+   "landing_items": 56,
+   "brief": "blog-kit/brief/timing-cat-tablet-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-smartphone-2026Q4",
+   "type": "timing",
+   "priority": 1.9529999999999998,
+   "title_hint": "iPhone・スマートフォンの底値は長続きしない。最安値をつけた30商品のうち、21商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/smartphone/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-smartphone-2026Q4&utm_content=end",
+   "landing_label": "iPhone・スマートフォンの価格推移・買い時の一覧を見る",
+   "landing_items": 47,
+   "brief": "blog-kit/brief/timing-cat-smartphone-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-shoes-2026Q4",
+   "type": "timing",
+   "priority": 1.956,
+   "title_hint": "シューズ・スニーカーで、7,480円損しない買い方。「ナイキ エア マックス AP」は14,960円の日も7,480円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/shoes/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-shoes-2026Q4&utm_content=end",
+   "landing_label": "シューズ・スニーカーの価格推移・買い時の一覧を見る",
+   "landing_items": 44,
+   "brief": "blog-kit/brief/timing-cat-shoes-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-watch-2026Q4",
+   "type": "timing",
+   "priority": 1.9569999999999999,
+   "title_hint": "「セイコーセレクション」が62,700円→29,700円。腕時計・スマートウォッチは、買う日で33,000円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/watch/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-watch-2026Q4&utm_content=end",
+   "landing_label": "腕時計・スマートウォッチの価格推移・買い時の一覧を見る",
+   "landing_items": 43,
+   "brief": "blog-kit/brief/timing-cat-watch-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-earphone-2026Q4",
+   "type": "timing",
+   "priority": 1.959,
+   "title_hint": "イヤホン・AirPodsの底値は長続きしない。最安値をつけた29商品のうち、15商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/earphone/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-earphone-2026Q4&utm_content=end",
+   "landing_label": "イヤホン・AirPodsの価格推移・買い時の一覧を見る",
+   "landing_items": 41,
+   "brief": "blog-kit/brief/timing-cat-earphone-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-headphone-2026Q4",
+   "type": "timing",
+   "priority": 1.96,
+   "title_hint": "ヘッドホン・ヘッドセットの底値は長続きしない。最安値をつけた21商品のうち、11商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/headphone/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-headphone-2026Q4&utm_content=end",
+   "landing_label": "ヘッドホン・ヘッドセットの価格推移・買い時の一覧を見る",
+   "landing_items": 40,
+   "brief": "blog-kit/brief/timing-cat-headphone-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-health-2026Q4",
+   "type": "timing",
+   "priority": 1.966,
+   "title_hint": "血圧計・体重計で、4,912円損しない買い方。「タニタ 体組成計 50g単位」は14,880円の日も9,968円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/health/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-health-2026Q4&utm_content=end",
+   "landing_label": "血圧計・体重計の価格推移・買い時の一覧を見る",
+   "landing_items": 34,
+   "brief": "blog-kit/brief/timing-cat-health-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-chair-2026Q4",
+   "type": "timing",
+   "priority": 1.966,
+   "title_hint": "チェア・椅子で、4,900円損しない買い方。「楽天常勝No.1 Dowinx」は18,880円の日も13,980円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/chair/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-chair-2026Q4&utm_content=end",
+   "landing_label": "チェア・椅子の価格推移・買い時の一覧を見る",
+   "landing_items": 34,
+   "brief": "blog-kit/brief/timing-cat-chair-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-laptop-2026Q4",
+   "type": "timing",
+   "priority": 1.967,
+   "title_hint": "「Crucial 64GB」、高い日は341,400円、安い日は156,375円。差は185,025円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/laptop/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-laptop-2026Q4&utm_content=end",
+   "landing_label": "ノートパソコンの価格推移・買い時の一覧を見る",
+   "landing_items": 33,
+   "brief": "blog-kit/brief/timing-cat-laptop-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-game-console-2026Q4",
+   "type": "timing",
+   "priority": 1.97,
+   "title_hint": "ゲーム機の底値は長続きしない。最安値をつけた16商品のうち、9商品は1週間で値段が戻っていた(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/game-console/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-game-console-2026Q4&utm_content=end",
+   "landing_label": "ゲーム機の価格推移・買い時の一覧を見る",
+   "landing_items": 30,
+   "brief": "blog-kit/brief/timing-cat-game-console-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-golf-2026Q4",
+   "type": "timing",
+   "priority": 1.97,
+   "title_hint": "「キャロウェイ QUANTUM」が110,000円→53,909円。ゴルフ用品は、買う日で56,091円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/golf/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-golf-2026Q4&utm_content=end",
+   "landing_label": "ゴルフ用品の価格推移・買い時の一覧を見る",
+   "landing_items": 30,
+   "brief": "blog-kit/brief/timing-cat-golf-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-aircon-2026Q4",
+   "type": "timing",
+   "priority": 1.9729999999999999,
+   "title_hint": "「スポットエアコン」、高い日は88,600円、安い日は39,800円。差は48,800円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/aircon/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-aircon-2026Q4&utm_content=end",
+   "landing_label": "エアコンの価格推移・買い時の一覧を見る",
+   "landing_items": 27,
+   "brief": "blog-kit/brief/timing-cat-aircon-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-projector-2026Q4",
+   "type": "timing",
+   "priority": 1.9729999999999999,
+   "title_hint": "「Anker Nebula」、高い日は89,990円、安い日は49,990円。差は40,000円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/projector/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-projector-2026Q4&utm_content=end",
+   "landing_label": "プロジェクターの価格推移・買い時の一覧を見る",
+   "landing_items": 27,
+   "brief": "blog-kit/brief/timing-cat-projector-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-pressure-washer-2026Q4",
+   "type": "timing",
+   "priority": 1.974,
+   "title_hint": "高圧洗浄機で、3,846円損しない買い方。「ケルヒャージャパン OC 5」は16,646円の日も12,800円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/pressure-washer/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-pressure-washer-2026Q4&utm_content=end",
+   "landing_label": "高圧洗浄機の価格推移・買い時の一覧を見る",
+   "landing_items": 26,
+   "brief": "blog-kit/brief/timing-cat-pressure-washer-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-dashcam-2026Q4",
+   "type": "timing",
+   "priority": 1.975,
+   "title_hint": "「バイク ドライブレコーダー」が39,800円→25,800円。ドライブレコーダーは、買う日で14,000円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/dashcam/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-dashcam-2026Q4&utm_content=end",
+   "landing_label": "ドライブレコーダーの価格推移・買い時の一覧を見る",
+   "landing_items": 25,
+   "brief": "blog-kit/brief/timing-cat-dashcam-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-speaker-2026Q4",
+   "type": "timing",
+   "priority": 1.975,
+   "title_hint": "「フィリップス サウンドバー」が33,600円→15,800円。スピーカー・サウンドバーは、買う日で17,800円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/speaker/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-speaker-2026Q4&utm_content=end",
+   "landing_label": "スピーカー・サウンドバーの価格推移・買い時の一覧を見る",
+   "landing_items": 25,
+   "brief": "blog-kit/brief/timing-cat-speaker-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-humidifier-2026Q4",
+   "type": "timing",
+   "priority": 1.9769999999999999,
+   "title_hint": "「加湿器 約4L シャープ」が29,800円→18,980円。加湿器は、買う日で10,820円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/humidifier/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-humidifier-2026Q4&utm_content=end",
+   "landing_label": "加湿器の価格推移・買い時の一覧を見る",
+   "landing_items": 23,
+   "brief": "blog-kit/brief/timing-cat-humidifier-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-pokemon-2026Q4",
+   "type": "timing",
+   "priority": 1.9769999999999999,
+   "title_hint": "「ポケモンカードゲーム」が22,680円→9,380円。ポケモンカードは、買う日で13,300円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/pokemon/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-pokemon-2026Q4&utm_content=end",
+   "landing_label": "ポケモンカードの価格推移・買い時の一覧を見る",
+   "landing_items": 23,
+   "brief": "blog-kit/brief/timing-cat-pokemon-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-fan-2026Q4",
+   "type": "timing",
+   "priority": 1.9769999999999999,
+   "title_hint": "扇風機・サーキュレーターで、4,319円損しない買い方。「扇風機 サーキュレーター」は12,800円の日も8,481円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/fan/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-fan-2026Q4&utm_content=end",
+   "landing_label": "扇風機・サーキュレーターの価格推移・買い時の一覧を見る",
+   "landing_items": 23,
+   "brief": "blog-kit/brief/timing-cat-fan-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-epilator-2026Q4",
+   "type": "timing",
+   "priority": 1.978,
+   "title_hint": "脱毛器で、24,800円損しない買い方。「脱毛器 冷感 ムダ毛処理 簡単」は49,600円の日も24,800円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/epilator/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-epilator-2026Q4&utm_content=end",
+   "landing_label": "脱毛器の価格推移・買い時の一覧を見る",
+   "landing_items": 22,
+   "brief": "blog-kit/brief/timing-cat-epilator-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-hair-2026Q4",
+   "type": "timing",
+   "priority": 1.98,
+   "title_hint": "「ダイソン Dyson」、高い日は59,000円、安い日は25,900円。差は33,100円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/hair/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-hair-2026Q4&utm_content=end",
+   "landing_label": "ドライヤー・ヘアアイロンの価格推移・買い時の一覧を見る",
+   "landing_items": 20,
+   "brief": "blog-kit/brief/timing-cat-hair-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-kettle-2026Q4",
+   "type": "timing",
+   "priority": 1.982,
+   "title_hint": "電気ケトルで、3,201円損しない買い方。「象印マホービン ZOJIRUSH…」は13,200円の日も9,999円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/kettle/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-kettle-2026Q4&utm_content=end",
+   "landing_label": "電気ケトルの価格推移・買い時の一覧を見る",
+   "landing_items": 18,
+   "brief": "blog-kit/brief/timing-cat-kettle-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-detergent-2026Q4",
+   "type": "timing",
+   "priority": 1.984,
+   "title_hint": "「フィニッシュ 凝縮パワーキューブ」、高い日は3,380円、安い日は1,980円。差は1,400円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/detergent/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-detergent-2026Q4&utm_content=end",
+   "landing_label": "洗剤の価格推移・買い時の一覧を見る",
+   "landing_items": 16,
+   "brief": "blog-kit/brief/timing-cat-detergent-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-child-seat-2026Q4",
+   "type": "timing",
+   "priority": 1.984,
+   "title_hint": "「アップリカ フラディア プラス」、高い日は57,200円、安い日は41,999円。差は15,201円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/child-seat/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-child-seat-2026Q4&utm_content=end",
+   "landing_label": "チャイルドシートの価格推移・買い時の一覧を見る",
+   "landing_items": 16,
+   "brief": "blog-kit/brief/timing-cat-child-seat-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-power-station-2026Q4",
+   "type": "timing",
+   "priority": 1.9849999999999999,
+   "title_hint": "ポータブル電源で、29,700円損しない買い方。「ナカバヤシポータブル電源500W」は94,600円の日も64,900円の日もあった(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/power-station/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-power-station-2026Q4&utm_content=end",
+   "landing_label": "ポータブル電源の価格推移・買い時の一覧を見る",
+   "landing_items": 15,
+   "brief": "blog-kit/brief/timing-cat-power-station-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-impact-driver-2026Q4",
+   "type": "timing",
+   "priority": 1.986,
+   "title_hint": "「マキタ TD173 本体のみ」が39,980円→17,800円。インパクトドライバーは、買う日で22,180円変わる(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/impact-driver/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-impact-driver-2026Q4&utm_content=end",
+   "landing_label": "インパクトドライバーの価格推移・買い時の一覧を見る",
+   "landing_items": 14,
+   "brief": "blog-kit/brief/timing-cat-impact-driver-2026Q4.json"
+  },
+  {
+   "id": "timing-cat-beer-2026Q4",
+   "type": "timing",
+   "priority": 1.987,
+   "title_hint": "「アサヒ スーパードライ 缶」、高い日は9,498円、安い日は8,548円。差は950円。いま買う?待つ?(2026年11月)",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/beer/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-cat-beer-2026Q4&utm_content=end",
+   "landing_label": "ビール・ウイスキーの価格推移・買い時の一覧を見る",
+   "landing_items": 13,
+   "brief": "blog-kit/brief/timing-cat-beer-2026Q4.json"
+  },
+  {
+   "id": "timing-single-fanxiang-official-10000019",
+   "type": "timing",
+   "priority": 2.0,
+   "title_hint": "【2026年11月】R: W:6800MB/s PS5対応 SSD 1TB/2Tは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/storage/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-fanxiang-official-10000019&utm_content=end-list",
+   "landing_label": "SSD・HDD・NASの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-fanxiang-official-10000019.json"
+  },
+  {
+   "id": "timing-single-anker-10002525",
+   "type": "timing",
+   "priority": 2.01,
+   "title_hint": "【2026年11月】Anker Eufy (ユーフィ) Robot Vacuumは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-anker-10002525&utm_content=end-list",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-anker-10002525.json"
+  },
+  {
+   "id": "timing-single-jpeonon-10011423",
+   "type": "timing",
+   "priority": 2.02,
+   "title_hint": "【2026年11月】ディスプレイオーディオ QCM6225 8+256GB 2dは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/tv/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-jpeonon-10011423&utm_content=end-list",
+   "landing_label": "テレビ・モニターの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-jpeonon-10011423.json"
+  },
+  {
+   "id": "timing-single-aniviaworks-10000192",
+   "type": "timing",
+   "priority": 2.03,
+   "title_hint": "【2026年11月】自動給餌器 2匹 多頭飼い 犬 猫 自動餌やり機 ペット タは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/daily/under-5000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-aniviaworks-10000192&utm_content=end-list",
+   "landing_label": "日用品・ベビーの5,000円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-aniviaworks-10000192.json"
+  },
+  {
+   "id": "timing-single-shark-10000430",
+   "type": "timing",
+   "priority": 2.04,
+   "title_hint": "【2026年11月】Stealth IQ ミキサー QX201J / シャークニは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/cooker/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-shark-10000430&utm_content=end-list",
+   "landing_label": "調理家電の3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-shark-10000430.json"
+  },
+  {
+   "id": "timing-single-roborockjapandirect-10000142",
+   "type": "timing",
+   "priority": 2.05,
+   "title_hint": "【2026年11月】Roborock ロボット掃除機 Q7B+ ロボロック お掃は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-roborockjapandirect-10000142&utm_content=end-list",
+   "landing_label": "掃除機の3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-roborockjapandirect-10000142.json"
+  },
+  {
+   "id": "timing-single-trend-tech-10010688",
+   "type": "timing",
+   "priority": 2.06,
+   "title_hint": "【2026年11月】【 】SwitchBot スマートロックLiteセット スイは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-trend-tech-10010688&utm_content=end-list",
+   "landing_label": "パソコン・周辺機器の3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-trend-tech-10010688.json"
+  },
+  {
+   "id": "timing-single-wtw-cctv-camera-10001114",
+   "type": "timing",
+   "priority": 2.07,
+   "title_hint": "【2026年11月】WTW 塚本無線 ペットカメラ 100度広角カメラ付自動給餌は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/audio/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-wtw-cctv-camera-10001114&utm_content=end-list",
+   "landing_label": "オーディオ・カメラの3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-wtw-cctv-camera-10001114.json"
+  },
+  {
+   "id": "timing-single-pixiogaming-10000161",
+   "type": "timing",
+   "priority": 2.08,
+   "title_hint": "【2026年11月】Pixio PS1D Wave モニターアーム デュアル 2は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/monitor/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-pixiogaming-10000161&utm_content=end-list",
+   "landing_label": "モニター・ディスプレイの1万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-pixiogaming-10000161.json"
+  },
+  {
+   "id": "timing-single-dji-shop-10002576",
+   "type": "timing",
+   "priority": 2.09,
+   "title_hint": "【2026年11月】55％Off ロボット掃除機 DJI ROMO A スケルトは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-dji-shop-10002576&utm_content=end-list",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-dji-shop-10002576.json"
+  },
+  {
+   "id": "timing-single-machinoomise-10000733",
+   "type": "timing",
+   "priority": 2.1,
+   "title_hint": "【2026年11月】CIO モバイルバッテリー 大容量 20000mAh [世界は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/under-5000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-machinoomise-10000733&utm_content=end-list",
+   "landing_label": "パソコン・周辺機器の5,000円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-machinoomise-10000733.json"
+  },
+  {
+   "id": "timing-single-switchbot-10000273",
+   "type": "timing",
+   "priority": 2.11,
+   "title_hint": "【2026年11月】SwitchBot スイッチボット ロボット掃除機 K11+は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-switchbot-10000273&utm_content=end-list",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-switchbot-10000273.json"
+  },
+  {
+   "id": "timing-single-anker-10001958",
+   "type": "timing",
+   "priority": 2.12,
+   "title_hint": "【2026年11月】Anker Power Bank (20000mAh, 30は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/under-5000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-anker-10001958&utm_content=end-list",
+   "landing_label": "パソコン・周辺機器の5,000円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-anker-10001958.json"
+  },
+  {
+   "id": "timing-single-smoothskin-10000070",
+   "type": "timing",
+   "priority": 2.13,
+   "title_hint": "【2026年11月】脱毛器 Pure Ice 痛みレス サファイア冷却 SMOOは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/epilator/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-smoothskin-10000070&utm_content=end-list",
+   "landing_label": "脱毛器の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-smoothskin-10000070.json"
+  },
+  {
+   "id": "timing-single-roborockjapandirect-10000140",
+   "type": "timing",
+   "priority": 2.14,
+   "title_hint": "【2026年11月】ロボロック Roborock ロボット掃除機 QrevoL は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-roborockjapandirect-10000140&utm_content=end-list",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-roborockjapandirect-10000140.json"
+  },
+  {
+   "id": "timing-single-pixiogaming-10000127",
+   "type": "timing",
+   "priority": 2.15,
+   "title_hint": "【2026年11月】ゲーミングモニター 27インチ 180hz WQHD ゲームは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/monitor/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-pixiogaming-10000127&utm_content=end-list",
+   "landing_label": "モニター・ディスプレイの3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-pixiogaming-10000127.json"
+  },
+  {
+   "id": "timing-single-motoworld-10000067",
+   "type": "timing",
+   "priority": 2.16,
+   "title_hint": "【2026年11月】バイク ドライブレコーダー バイク用 バイク用ナビ バイク用は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/monitor/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-motoworld-10000067&utm_content=end-list",
+   "landing_label": "モニター・ディスプレイの3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-motoworld-10000067.json"
+  },
+  {
+   "id": "timing-single-switchbot-10000272",
+   "type": "timing",
+   "priority": 2.17,
+   "title_hint": "【2026年11月】SwitchBot スイッチボット お掃除ロボットS20 ロは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-switchbot-10000272&utm_content=end-list",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-switchbot-10000272.json"
+  },
+  {
+   "id": "timing-single-qualityspace-10023252",
+   "type": "timing",
+   "priority": 2.18,
+   "title_hint": "【2026年11月】「新品 未使用品」SIMフリー iPhone SE (第3世は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/smartphone/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-qualityspace-10023252&utm_content=end-list",
+   "landing_label": "iPhone・スマートフォンの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-qualityspace-10023252.json"
+  },
+  {
+   "id": "timing-single-dreame-shop-10000154",
+   "type": "timing",
+   "priority": 2.19,
+   "title_hint": "【2026年11月】【段差6cm越え】【20000Pa】ロボット掃除機 水拭き両は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-dreame-shop-10000154&utm_content=end-list",
+   "landing_label": "掃除機の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-dreame-shop-10000154.json"
+  },
+  {
+   "id": "timing-single-anker-10002400",
+   "type": "timing",
+   "priority": 2.2,
+   "title_hint": "【2026年11月】Anker Zolo Power Bank (20000mAは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-anker-10002400&utm_content=end-list",
+   "landing_label": "パソコン・周辺機器の1万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-anker-10002400.json"
+  },
+  {
+   "id": "timing-single-anker-10001976",
+   "type": "timing",
+   "priority": 2.21,
+   "title_hint": "【2026年11月】Anker Power Bank (20000mAh, 87は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-anker-10001976&utm_content=end-list",
+   "landing_label": "パソコン・周辺機器の1万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-anker-10001976.json"
+  },
+  {
+   "id": "timing-single-jpeonon-10011408",
+   "type": "timing",
+   "priority": 2.22,
+   "title_hint": "【2026年11月】ディスプレイオーディオ android14 4+64GB 2は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/tv/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-jpeonon-10011408&utm_content=end-list",
+   "landing_label": "テレビ・モニターの3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-jpeonon-10011408.json"
+  },
+  {
+   "id": "timing-single-dyson-10001802",
+   "type": "timing",
+   "priority": 2.23,
+   "title_hint": "【2026年11月】ダイソン Dyson V8 Origin 掃除機 コードレスは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/vacuum/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-dyson-10001802&utm_content=end-list",
+   "landing_label": "掃除機の3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-dyson-10001802.json"
+  },
+  {
+   "id": "timing-single-solemood-10000079",
+   "type": "timing",
+   "priority": 2.24,
+   "title_hint": "【2026年11月】【BLACK FRIDAY】 8種類ヘッド カーペットクリーは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/kitchen/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-solemood-10000079&utm_content=end-list",
+   "landing_label": "キッチン・生活家電の3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-solemood-10000079.json"
+  },
+  {
+   "id": "timing-single-smoothskin-10000004",
+   "type": "timing",
+   "priority": 2.25,
+   "title_hint": "【2026年11月】脱毛器 サファイア冷却 アイスモード VIO対応 Pure は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/game-console/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-smoothskin-10000004&utm_content=end-list",
+   "landing_label": "ゲーム機の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-smoothskin-10000004.json"
+  },
+  {
+   "id": "timing-single-delonghi-10002253",
+   "type": "timing",
+   "priority": 2.26,
+   "title_hint": "【2026年11月】デロンギ オイルヒーター サーマルカットフィン 1500W[は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/season/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-delonghi-10002253&utm_content=end-list",
+   "landing_label": "空調・季節家電の3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-delonghi-10002253.json"
+  },
+  {
+   "id": "timing-single-e-kurashi-10052705",
+   "type": "timing",
+   "priority": 2.27,
+   "title_hint": "【2026年11月】テレビ 液晶テレビ 4Kテレビ スマートテレビ ネット動画対は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/tv/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-e-kurashi-10052705&utm_content=end-list",
+   "landing_label": "テレビの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-e-kurashi-10052705.json"
+  },
+  {
+   "id": "timing-single-biccamera-13347045",
+   "type": "timing",
+   "priority": 2.2800000000000002,
+   "title_hint": "【2026年11月】SanDisk｜サンディスク 外付けSSD USB-C＋USは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/storage/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-biccamera-13347045&utm_content=end-list",
+   "landing_label": "SSD・HDD・NASの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-biccamera-13347045.json"
+  },
+  {
+   "id": "timing-single-loctek-10000222",
+   "type": "timing",
+   "priority": 2.29,
+   "title_hint": "【2026年11月】学習机 シンプル コンパクト 昇降 電動式 FlexiSpoは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/furniture/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-loctek-10000222&utm_content=end-list",
+   "landing_label": "家具・インテリアの3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-loctek-10000222.json"
+  },
+  {
+   "id": "timing-single-jpeonon-10011386",
+   "type": "timing",
+   "priority": 2.3,
+   "title_hint": "【2026年11月】ディスプレイオーディオ QCM6225-AD androidは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/tv/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-jpeonon-10011386&utm_content=end-list",
+   "landing_label": "テレビ・モニターの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-jpeonon-10011386.json"
+  },
+  {
+   "id": "timing-single-loctek-10000339",
+   "type": "timing",
+   "priority": 2.31,
+   "title_hint": "【2026年11月】電動昇降デスク FlexiSpot E7 昇降デスク 電動 は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-loctek-10000339&utm_content=end-list",
+   "landing_label": "パソコン・周辺機器の価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-loctek-10000339.json"
+  },
+  {
+   "id": "timing-single-dangbei-10000045",
+   "type": "timing",
+   "priority": 2.32,
+   "title_hint": "【2026年11月】【VGP2025 企画賞】Dangbei MP1 Max プは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/projector/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-dangbei-10000045&utm_content=end-list",
+   "landing_label": "プロジェクターの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-dangbei-10000045.json"
+  },
+  {
+   "id": "timing-single-switchbot-10000275",
+   "type": "timing",
+   "priority": 2.33,
+   "title_hint": "【2026年11月】SwitchBot スイッチボット ドアロックUltra 顔は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/pc/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-switchbot-10000275&utm_content=end-list",
+   "landing_label": "パソコン・周辺機器の3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-switchbot-10000275.json"
+  },
+  {
+   "id": "timing-single-toysprime-10001996",
+   "type": "timing",
+   "priority": 2.34,
+   "title_hint": "【2026年11月】予約 2026年11月26日 ポケモンカード くじ シュリンは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/pokemon/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-toysprime-10001996&utm_content=end-list",
+   "landing_label": "ポケモンカードの3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-toysprime-10001996.json"
+  },
+  {
+   "id": "timing-single-worldmobile-10019419",
+   "type": "timing",
+   "priority": 2.35,
+   "title_hint": "【2026年11月】【未開封｜未使用 】iPad (A16) 第11世代 11イは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/tablet/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-worldmobile-10019419&utm_content=end-list",
+   "landing_label": "iPad・タブレットの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-worldmobile-10019419.json"
+  },
+  {
+   "id": "timing-single-nike-official-10016876",
+   "type": "timing",
+   "priority": 2.36,
+   "title_hint": "【2026年11月】ナイキ ウィメンズ RYZ 365 II NIKE レディーは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/shoes/under-10000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-nike-official-10016876&utm_content=end-list",
+   "landing_label": "シューズ・スニーカーの1万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-nike-official-10016876.json"
+  },
+  {
+   "id": "timing-single-nike-official-10004463",
+   "type": "timing",
+   "priority": 2.37,
+   "title_hint": "【2026年11月】ナイキ エア マックス AP メンズシューズ NIKE シュは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/shoes/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-nike-official-10004463&utm_content=end-list",
+   "landing_label": "シューズ・スニーカーの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-nike-official-10004463.json"
+  },
+  {
+   "id": "timing-single-pixiogaming-10000120",
+   "type": "timing",
+   "priority": 2.38,
+   "title_hint": "【2026年11月】Pixio PX277OLEDMAXV2 ゲーミングモニターは買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/monitor/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-pixiogaming-10000120&utm_content=end-list",
+   "landing_label": "モニター・ディスプレイの価格推移・買い時の一覧を見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-pixiogaming-10000120.json"
+  },
+  {
+   "id": "timing-single-ypdirect-10000708",
+   "type": "timing",
+   "priority": 2.39,
+   "title_hint": "【2026年11月】ドライブレコーダー 前後2カメラ ユピテル Y-116c 超は買い時?価格推移を分析",
+   "landing_url": "https://viathespectrumroad-collab.github.io/furusato-ranking/kaidoki/type/dashcam/under-30000/?utm_source=hatena&utm_medium=blog&utm_campaign=timing-single-ypdirect-10000708&utm_content=end-list",
+   "landing_label": "ドライブレコーダーの3万円以下の商品を一覧で見る",
+   "landing_items": 8,
+   "brief": "blog-kit/brief/timing-single-ypdirect-10000708.json"
+  }
+ ],
+ "fixed_pages": [
+  {
+   "title": "このブログについて(広告・運営方針)",
+   "html": "<p style=\"background:#f3f4f6;color:#555;font-size:12px;padding:8px 12px;border-radius:6px;margin:0 0 16px\">※このブログとサイトには、アフィリエイト広告(PR)を含みます。詳しくは、このページの下の「広告・運営方針」をご覧ください。</p><div style=\"background:linear-gradient(135deg,#1e3a8a,#1d4ed8);color:#fff;border-radius:12px;padding:28px 22px;margin:0 0 24px\"><p style=\"margin:0 0 10px;font-size:22px;font-weight:700;line-height:1.5\">同じ商品でも、買う日で20,995円違うことがあります。</p><p style=\"margin:0;font-size:14px;line-height:1.8;opacity:.92\">楽天市場の値段を毎日記録して、「いま買って損しないか」を確かめるブログです。安いものを探す前に、安いかどうかを確かめる。</p></div><div style=\"border:1px solid #e5e7eb;border-radius:10px;padding:14px 16px;margin:0 0 24px;background:#fff\"><p style=\"margin:0 0 6px;font-size:13px;color:#6b7280\">実際の例(2026年11月21日時点の記録)</p><p style=\"margin:0 0 8px;font-weight:700;color:#111827\">Anker Eufy RoboVac G30 Hybrid</p><p style=\"margin:0 0 8px;font-size:15px;line-height:1.8\"><span style=\"color:#991b1b;font-weight:700\">高い日 39,990円</span>(2026年7月26日) → <span style=\"color:#166534;font-weight:700\">安い日 18,995円</span>(2026年10月20日)</p><p style=\"text-align:center;margin:12px 0\"><img src=\"https://viathespectrumroad-collab.github.io/furusato-ranking/blog-kit/chart/anker-10000935.svg\" alt=\"Anker Eufy RoboVac G30 Hybridの価格推移グラフ\" style=\"max-width:100%;height:auto;border-radius:8px\"></p><p style=\"margin:6px 0\"><span style=\"display:inline-block;background:#dcfce7;color:#166534;font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px\">いまが買い時(過去最安値に近い)</span></p><p style=\"margin:6px 0;font-size:14px\">いまの18,995円は、記録のなかでいちばん安い値段です(最高は39,990円、2026年7月26日)。</p><p style=\"margin:8px 0 0;font-size:14px\"><a href=\"https://viathespectrumroad-collab.github.io/furusato-ranking/item/anker-10000935/?utm_source=hatena&amp;utm_medium=blog&amp;utm_campaign=about&amp;utm_content=example\" target=\"_blank\" rel=\"noopener\">この商品の今の値段と履歴を見る(モノ価格ログ)</a></p></div><h2>こんなときに役立ちます</h2><div style=\"display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 20px\"><div style=\"flex:1 1 200px;border:1px solid #e5e7eb;border-top:4px solid #dc2626;border-radius:8px;padding:14px 16px;background:#fff\"><p style=\"margin:0 0 6px;font-weight:700;font-size:16px;color:#111827\">高いときに買って後悔したくない</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">いまの値段が、過去より高いのか安いのかを、先に確かめられます。</p></div><div style=\"flex:1 1 200px;border:1px solid #e5e7eb;border-top:4px solid #d97706;border-radius:8px;padding:14px 16px;background:#fff\"><p style=\"margin:0 0 6px;font-weight:700;font-size:16px;color:#111827\">「半額」「セール」が本当か知りたい</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">値下がり前の値段が、どれくらい続いていたかを見て、判断できます。</p></div><div style=\"flex:1 1 200px;border:1px solid #e5e7eb;border-top:4px solid #16a34a;border-radius:8px;padding:14px 16px;background:#fff\"><p style=\"margin:0 0 6px;font-weight:700;font-size:16px;color:#111827\">結局どれを選べばいいか決めたい</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">予算別・用途別に、いま買ってよい商品と、待ったほうがよい商品を分けて紹介します。</p></div></div><h2>値段の見方</h2><p>記事の中の商品には、記録した値段の履歴から、次のどれかの表示をつけています。</p><div style=\"background:#f9fafb;border-radius:8px;padding:10px 16px;margin:12px 0 20px\"><p style=\"margin:8px 0\"><span style=\"display:inline-block;background:#dcfce7;color:#166534;font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px\">いまが買い時(過去最安値に近い)</span><span style=\"margin-left:10px;font-size:13px;color:#6b7280\">過去の最安値に近いとき</span></p><p style=\"margin:8px 0\"><span style=\"display:inline-block;background:#dcfce7;color:#166534;font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px\">安めの水準(買ってもよい)</span><span style=\"margin-left:10px;font-size:13px;color:#6b7280\">最安値の1割以内くらいのとき</span></p><p style=\"margin:8px 0\"><span style=\"display:inline-block;background:#fef9c3;color:#854d0e;font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px\">急がないなら様子見</span><span style=\"margin-left:10px;font-size:13px;color:#6b7280\">安くも高くもないとき</span></p><p style=\"margin:8px 0\"><span style=\"display:inline-block;background:#f1f5f9;color:#334155;font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px\">いつ買ってもほぼ同じ</span><span style=\"margin-left:10px;font-size:13px;color:#6b7280\">ほとんど値動きがない商品</span></p><p style=\"margin:8px 0\"><span style=\"display:inline-block;background:#fee2e2;color:#991b1b;font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px\">いまは待つほうが安全</span><span style=\"margin-left:10px;font-size:13px;color:#6b7280\">高いとき。待つと下がる余地があるとき</span></p></div><h2>使い方は3ステップ</h2><div style=\"display:flex;gap:14px;align-items:flex-start;margin:0 0 14px\"><div style=\"flex:0 0 36px;height:36px;line-height:36px;border-radius:50%;background:#1d4ed8;color:#fff;text-align:center;font-weight:700\">1</div><div><p style=\"margin:0 0 2px;font-weight:700;color:#111827\">ブログで、選び方と買い時を知る</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">予算別・用途別の選び方と、「いま買うか、待つか」の考え方を読みます。</p></div></div><div style=\"display:flex;gap:14px;align-items:flex-start;margin:0 0 14px\"><div style=\"flex:0 0 36px;height:36px;line-height:36px;border-radius:50%;background:#1d4ed8;color:#fff;text-align:center;font-weight:700\">2</div><div><p style=\"margin:0 0 2px;font-weight:700;color:#111827\">サイトで、いまの値段と履歴を見る</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">気になる商品の値段の動きを、グラフと「最安だった日」で確かめます。</p></div></div><div style=\"display:flex;gap:14px;align-items:flex-start;margin:0 0 14px\"><div style=\"flex:0 0 36px;height:36px;line-height:36px;border-radius:50%;background:#1d4ed8;color:#fff;text-align:center;font-weight:700\">3</div><div><p style=\"margin:0 0 2px;font-weight:700;color:#111827\">販売ページで、最新の値段を確認して買う</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">クーポンや送料は商品ごとに違うので、購入前に、楽天市場の販売ページで確かめてください。</p></div></div><p style=\"margin:22px 0 6px\"><a href=\"https://viathespectrumroad-collab.github.io/furusato-ranking/\" target=\"_blank\" rel=\"noopener\" style=\"display:block;background:#1d4ed8;color:#fff;text-align:center;font-weight:700;font-size:16px;padding:14px 12px;border-radius:8px;text-decoration:none\">モノ価格ログ(サイト)で、いまの値段を見る ›</a></p><p style=\"margin:0 0 28px;color:#6b7280;font-size:12px;text-align:center\">商品ごとの値段の履歴と、楽天市場の販売ページへのリンクがあります(広告を含みます)。</p><h2 id=\"policy\">広告・運営方針</h2><div style=\"display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 20px\"><div style=\"flex:1 1 200px;border:1px solid #e5e7eb;border-top:4px solid #d97706;border-radius:8px;padding:14px 16px;background:#fff\"><p style=\"margin:0 0 6px;font-weight:700;font-size:16px;color:#111827\">広告を含みます</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">楽天アフィリエイトなどの広告があります。ただし、報酬の有無で判定や記事の内容は変えません。</p></div><div style=\"flex:1 1 200px;border:1px solid #e5e7eb;border-top:4px solid #1d4ed8;border-radius:8px;padding:14px 16px;background:#fff\"><p style=\"margin:0 0 6px;font-weight:700;font-size:16px;color:#111827\">値段は表示価格のみ</p><p style=\"margin:0;font-size:14px;line-height:1.7;color:#4b5563\">クーポン、ポイント、送料は含みません。購入前に、販売ページで確認してください。</p></div></div><h3>広告について</h3><p>このブログとサイトには、アフィリエイト広告(楽天アフィリエイトなど)を含みます。リンク経由で購入されると、運営者に報酬が入ることがあります。報酬の有無で、価格の判定や記事の内容を変えることはありません。</p><h3>価格データについて</h3><div style=\"border-left:5px solid #1d4ed8;background:#f9fafb;border-radius:4px;padding:12px 16px;margin:12px 0 20px\"><p style=\"margin:0 0 6px;font-weight:700;color:#111827\">記録しているもの</p><p style=\"margin:0;font-size:14px;line-height:1.8\">楽天市場の商品ページの表示価格を、1日1回記録しています。</p></div><div style=\"border-left:5px solid #d97706;background:#f9fafb;border-radius:4px;padding:12px 16px;margin:12px 0 20px\"><p style=\"margin:0 0 6px;font-weight:700;color:#111827\">分からないこと</p><ul style=\"margin:0;padding-left:20px;font-size:14px;line-height:1.8\"><li>クーポン、ポイント還元、送料を含めた実質の値段</li><li>記録を始める前の値段や、他のお店の値段</li><li>これからの値段(予測するものではありません)</li></ul></div><h3>判定のしくみ</h3><p>「底値圏」「安め」「ふつう」「高値圏」などの判定は、記録した価格の履歴だけから、決まった基準で自動的に出しています。基準は、各記事に載せています。</p>"
+  }
+ ]
+}

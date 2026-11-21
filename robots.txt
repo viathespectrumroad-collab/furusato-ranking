@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://viathespectrumroad-collab.github.io/furusato-ranking/sitemap.xml
